@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.restaurant {
+  display: grid;
+  grid-template-areas:
+    "header header header"
+    "menu nav nav"
+    "menu gallery gallery"
+    "footer footer footer";
+  min-height: 100dvh;
+}
+.header {
+  grid-area: header;
+  background-color: #f8b400;
+}
+.nav {
+  grid-area: nav;
+  background-color: #f85f73;
+}
+.menu {
+  grid-area: menu;
+  background-color: #28c76f;
+}
+.gallery {
+  grid-area: gallery;
+  background-color: #009688;
+}
+.gallery-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: 100px 1fr;
+  gap: 10px;
+  place-items: center;
+}
+.gallery-container > img {
+  width: 100%;
+}
+.footer {
+  grid-area: footer;
+  background-color: #333;
+  color: #fff;
+}
